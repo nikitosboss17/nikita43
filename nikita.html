@@ -1,0 +1,198 @@
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Explorarea Universului</title>
+  <style>
+    body {
+      background-color: #0b0c2a;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #111;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #00ffcc;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+      transition: ease-in-out 0.4s;
+    }
+
+    section {
+      display: none;
+      padding: 30px;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    h1, h2 {
+      color: #ffcc00;
+    }
+
+    .highlight {
+      color: #ff69b4;
+    }
+
+    img {
+      width: 400px;
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #fff;
+      margin: 20px 0;
+    }
+
+    form {
+      background-color: #1b1c3a;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 400px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: none;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #00ffcc;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ffcc00;
+    }
+   #planete h2{
+    cursor:default;
+   }
+  #nas a{
+    text-decoration: none;
+    color:#ffcc00;
+   }
+   #nas a:hover{
+    color:darkred;
+    transition: ease-in 0.3s;
+   }
+   #acasa #text{
+    color: antiquewhite;
+   }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1> Explorarea Universului</h1>
+    <nav>
+      <a href="#" onclick="showPage('acasa')">Acasă</a>
+      <a href="#" onclick="showPage('planete')">Planete</a>
+      <a href="#" onclick="showPage('misiuni')">Misiuni Spațiale</a>
+      <a href="#" onclick="showPage('contact')">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Pagina 1: Acasă -->
+  <section id="acasa" class="active">
+    <h2>Despre Univers</h2>
+    <p class="highlight">Universul este un mister vast și fascinant.</p>
+    <p id="text">Universul este totalitatea spațiului și timpului,a tuturor formelor de materie și energie. În timp ce dimensiunea întregului Univers nu este cunoscută,universul observabil poate fi măsurat și este estimat în prezent la 93 miliarde de ani-lumină în diametru.Cele mai vechi modele științifice ale Universului au fost dezvoltate de filosofi antici greci și indieni și au fost geocentrice, plasând Pământul în centrul Universului.De-a lungul secolelor, observațiile astronomice mai precise l-au determinat pe Nicolaus Copernicus să dezvolte modelul heliocentric cu Soarele în centrul Sistemului Solar.</p>
+    <img src="E:\Proiectul la informatica\imagini\galaxy.png" alt="Galaxie spațială">
+    <p id="nas">Mai multe informații pe <a href="https://www.nasa.gov" target="_blank">nasa.gov</a>.</p>
+  </section>
+
+  <!-- Pagina 2: Planete -->
+  <section id="planete">
+    <h2> Planete din Sistemul Solar</h2>
+
+    <h3> Mercur</h3>
+    <p>Mercur este cea mai apropiată planetă de Soare și are o suprafață acoperită de cratere.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Mercury_in_true_color.jpg" alt="Mercur">
+
+    <h3> Venus</h3>
+    <p>Este a doua planetă de la Soare și este învăluită într-o atmosferă densă, toxică.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Venus-real_color.jpg" alt="Venus">
+
+    <h3> Pământul</h3>
+    <p>Singura planetă cunoscută care susține viața, cu atmosferă bogată în oxigen și apă lichidă.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg" alt="Pământul">
+
+    <h3> Marte</h3>
+    <p>Cunoscută ca „Planeta Roșie”. Suprafața este plină de praf roșu de oxid de fier.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg" alt="Marte">
+
+    <h3> Jupiter</h3>
+    <p>Este cea mai mare planetă din sistemul solar, cu o mare pată roșie – o furtună uriașă.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Jupiter.jpg" alt="Jupiter">
+
+    <h3> Saturn</h3>
+    <p>Renumit pentru inelele sale spectaculoase formate din gheață și roci.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Saturn_during_Equinox.jpg" alt="Saturn">
+
+    <h3> Uranus</h3>
+    <p>O planetă gazoasă cu o culoare albastru-verzuie datorită metanului din atmosferă.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Uranus2.jpg" alt="Uranus">
+
+    <h3> Neptun</h3>
+    <p>Este cea mai îndepărtată planetă de Soare și are vânturi extrem de rapide.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Neptune_Full.jpg" alt="Neptun">
+  </section>
+
+  <!-- Pagina 3: Misiuni Spațiale -->
+  <section id="misiuni">
+    <h2> Misiuni Spațiale Celebre</h2>
+    <h3>Apollo 11</h3>
+    <p>Prima misiune cu oameni care a ajuns pe Lună.</p>
+    <img src="E:\Proiectul la informatica\imagini\Apollo11.png" alt="Apollo 11">
+
+    <h3>Curiosity Rover</h3>
+    <p>Robotul care explorează planeta Marte din 2012.</p>
+    <img src="E:\Proiectul la informatica\imagini\robot.png" alt="Curiosity pe Marte">
+  </section>
+
+  <!-- Pagina 4: Contact -->
+  <section id="contact">
+    <h2> Contactează-ne</h2>
+    <form>
+      <label for="nume">Nume:</label>
+      <input type="text" id="nume" placeholder="Numele tău">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="exemplu@email.com">
+
+      <label for="mesaj">Mesaj:</label>
+      <textarea id="mesaj" rows="5" placeholder="Scrie mesajul tău aici..."></textarea>
+
+      <button type="submit">Trimite</button>
+    </form>
+  </section>
+
+  <!-- Script pentru navigare între pagini -->
+  <script>
+    function showPage(pageId) {
+      const sections = document.querySelectorAll("section");
+      sections.forEach(sec => sec.classList.remove("active"));
+      document.getElementById(pageId).classList.add("active");
+    }
+  </script>
+
+</body>
+</html>
